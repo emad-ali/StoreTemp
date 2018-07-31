@@ -1,0 +1,47 @@
+/* Nav bar */
+.navbar-brand{
+    width: 150px;
+    height: 56px !important;
+    line-height: normal !important;
+    margin-left: 15px !important;
+    padding-top: 1px;
+    padding-right: 3px;
+}
+.navbar-default{
+    /* background-color: #fafafa !important; */
+    background-color: white !important;
+
+    background-image:none;
+}
+.navbar {
+    min-height: 56px;
+}
+.wide350{
+    width: 350px !important;
+    height: 40px !important;
+    line-height: 36px !important;
+}
+.input-group-addon{
+    border-right: 1px solid #ccc !important;
+}
+
+.box{
+    border: 1px solid red;
+}
+#cart{
+    width: 45px;
+    height: 45px;
+    margin-right: 20px;
+    margin-right: 20px;
+    margin-top: 3px;
+    /* border: 1px solid #ccc;
+    border-radius: 50%; */
+    text-align: center;
+    vertical-align: middle;
+    padding-top: 12px;
+    padding-right: 9px !important;
+    color: lightblue;
+}
+.fa-shopping-cart{
+    font-size: 24px;
+}
