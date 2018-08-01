@@ -1,3 +1,14 @@
+@font-face {
+    font-family: "Droid";
+    src: url(./fonts/DroidKufi-Regular.ttf);
+}
+@font-face {
+    font-family: "Droid-Bold";
+    src: url(./fonts/DroidKufi-Bold.ttf);
+}
+body{
+    font-family: Droid , serif !important;
+}
 /* Nav bar */
 .navbar-brand{
     width: 150px;
@@ -10,11 +21,16 @@
 .navbar-default{
     /* background-color: #fafafa !important; */
     background-color: white !important;
-
+    border: 0;
+    border-bottom: 1px solid #ccc !important;
     background-image:none;
+    box-shadow: none;
+    -webkit-box-shadow:none;
+    margin: 0 !important;
 }
 .navbar {
     min-height: 56px;
+    border: 0;
 }
 .wide350{
     width: 350px !important;
@@ -26,22 +42,180 @@
 }
 
 .box{
-    border: 1px solid red;
+    border: 1px solid red !important;
 }
 #cart{
-    width: 45px;
-    height: 45px;
-    margin-right: 20px;
-    margin-right: 20px;
-    margin-top: 3px;
+
     /* border: 1px solid #ccc;
     border-radius: 50%; */
-    text-align: center;
-    vertical-align: middle;
-    padding-top: 12px;
-    padding-right: 9px !important;
-    color: lightblue;
+    
 }
 .fa-shopping-cart{
     font-size: 24px;
 }
+
+.mini-nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 25px;
+    min-height: 25px;
+    background-color: #8e8e8e;
+    color: #eee;
+    border: 0;
+    margin: 0;
+    padding: 2px;
+    z-index:2000;
+}
+.mini-nav a{
+    color: white;
+    margin: 10px;
+    font-family: Droid-Bold;
+    font-size: 14px;
+}
+.pull-right{
+    float: right;
+    padding-right: 15px;
+}
+.main-navbar-fixed-top {
+    position: fixed;
+    top: 25px !important;
+    left: 0;
+    right: 0;
+    border-radius: 0;
+}
+
+#cart .badge{
+    background-color: #ff6397 !important;
+    position: absolute;
+    top: 5px;
+    right: 1px;
+}
+
+.navbar-default .fa-user{
+    font-size: 24px;
+    color: lightblue;
+}
+
+#user-name , #cart{
+    height: 45px;
+    margin-left: 20px;
+    vertical-align: middle;
+    text-align: right;
+    padding-top: 12px;
+    padding-right: 9px !important;
+    color: black;
+}
+#user-name i, #cart i{
+    color: lightblue;
+    margin-left: 5px;
+}
+
+.body-content{
+    margin-top: 135px;
+}
+
+.fa-search{
+    font-size: 24px;
+    color: lightblue;
+}
+
+.sections-nav{
+    position: fixed;
+    top: 82px;
+    background-color: #eee;
+    min-height: 36px;
+    height: 36px;
+    /* padding: 6px; */
+    font-family: Droid-Bold;
+    border: 0;
+    width: 100%;
+    margin: 0;
+    /* shadows */
+    -moz-box-shadow: 0px 1px 7px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.37);
+    -moz-box-shadow: 0px 4px 9px 0px rgba(0,0,0,0.37);
+    box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.37);
+}
+
+.sections-nav ul {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    position: relative;
+    margin-right: 20px;
+    margin-left: 20px;
+    border: 0;
+    vertical-align: middle;
+  }
+  
+  .sections-nav li {
+    display: inline-block;
+    margin: 0;
+    border: 0;
+    padding: 6px;
+    height: 100%;
+  }
+  
+  .sections-nav a {
+    text-decoration: none;
+    display: block;
+    text-align: right;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+  }
+  .sections-nav  .section-name a.section-name-link{
+      color: #8e8e8e;
+  }
+  .sections-nav-category{
+    position: absolute;
+    left: 0;
+    /* background: #e0e0e0; */
+    background-color: white;
+    width: 100%;
+    display: none;
+    color: #fff;
+    margin-top:6px;
+    padding-top: 15px;
+    border: 0;
+    /* border-bottom: 2px solid lightblue;
+    border-left: 2px solid lightblue;
+    border-right: 2px solid lightblue; */
+    border: 2px solid #e0e0e0;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;
+    opacity: .9;
+  }
+  .sections-nav-category a{
+      color: black;
+  }
+
+  .sections-nav li:hover .sections-nav-category {
+    display: block;
+    overflow-x:visible;
+  }
+  .sections-nav .section-name:hover{
+    /* background-color: #e0e0e0; */
+    background-color: white;
+    border: 1px solid #e0e0e0;
+    border-top-left-radius:7px;
+  }
+  .sections-nav .section-name:hover  a{
+    color: black;
+  }
+  
+  .sections-nav-category li {
+    display: block;
+  }
+  
+  .sections-nav-category a {
+    padding: 0;
+    margin-bottom: .35em;
+  }
+  
+  .sections-nav-category a:hover {
+    text-decoration: underline;
+  }
