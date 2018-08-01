@@ -9,7 +9,7 @@
 body{
     font-family: Droid , serif !important;
 }
-/* Nav bar */
+/* Navbar */
 .navbar-brand{
     width: 150px;
     height: 56px !important;
@@ -17,6 +17,10 @@ body{
     margin-left: 15px !important;
     padding-top: 1px;
     padding-right: 3px;
+}
+.navbar-brand img{
+    width: 150px !important;
+    height: 56px !important;
 }
 .navbar-default{
     /* background-color: #fafafa !important; */
